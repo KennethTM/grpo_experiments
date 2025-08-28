@@ -1,0 +1,20 @@
+[project]
+name = "grpo-experiments"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate",
+    "bitsandbytes",
+    "datasets",
+    "peft",
+    "tensorboard",
+    "transformers",
+    "flash-attn",
+    "trl",
+    "vllm",
+]
+
+[tool.uv]
+no-build-isolation-package = ['flash-attn', 'setuptools']
