@@ -10,11 +10,15 @@ Performance of "base model" and "lora model" is evaluated on test set (`inferenc
 
 Training on just part of the dataset boost accuracy and improves the models ability to thinking using a constrained token budget.
 
+## Example results
+
 Example of performance gains:
 
 Base model accuracy = 0.388 and stop rate = 0.824
 
 LoRA model accuracy = 0.679 and stop rate = 0.935
+
+The accuracy improves. Stop rate is how often the model successfully stops generation due to a end of sentence token, which also improves as the model is being trained to figure of the question using less tokens.
 
 ## Install
 
